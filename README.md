@@ -1,26 +1,27 @@
 # Insight API
 
-A Bitcoin blockchain REST and web socket API service for [Bitcore Node](https://github.com/bitpay/bitcore-node).
+A Maxcoin blockchain REST and web socket API service for [Maxcoin-core Node](https://github.com/Max-Coin/maxcoin-core-node).
 
-This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/bitpay/insight-ui.
+This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/Max-Coin/insight-ui.
 
 ## Getting Started
 
 ```bashl
-npm install -g bitcore@latest
-bitcore create mynode
+npm install -g maxcoin-core@latest
+maxcoin-core create mynode
 cd mynode
-bitcore install insight-api
-bitcore start
+maxcoin-core install insight-api
+maxcoin-core start
 ```
 
 The API endpoints will be available by default at: `http://localhost:3001/insight-api/`
 
 ## Prerequisites
 
-- [Bitcore 5.x](https://github.com/bitpay/bitcore)
+- [Maxcoin-core 5.x](https://github.com/Max-Coin/Maxcoin-core)
 
-**Note:** You can use an existing Bitcoin data directory, however `txindex`, `addressindex`, `timestampindex` and `spentindex` needs to be set to true in `bitcoin.conf`, as well as a few other additional fields.
+**Note:** You can use an existing Maxcoin data directory, however 
+`txindex`, `addressindex`, `timestampindex` and `spentindex` needs to be set to true in `maxcoin.conf`, as well as a few other additional fields.
 
 ## Notes on Upgrading from v0.3
 
